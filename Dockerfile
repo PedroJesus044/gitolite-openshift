@@ -11,4 +11,4 @@ FROM registry.access.redhat.com/ubi9:9.4-1123.1719560047
 
 EXPOSE 22
 
-CMD ["sleep", "120"]
+CMD ["sleep", "inf"]
