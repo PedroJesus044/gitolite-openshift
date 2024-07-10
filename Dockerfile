@@ -7,7 +7,7 @@ RUN yum install git perl* -y
 RUN git clone https://github.com/sitaramc/gitolite
 RUN mkdir -p $HOME/bin
 RUN gitolite/install -to $HOME/bin
-RUN gitolite setup -pk my.id_rsa.pub
+RUN $HOME/bin/gitolite setup -pk my.id_rsa.pub
 
 EXPOSE 22
 
