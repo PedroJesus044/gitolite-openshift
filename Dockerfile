@@ -1,4 +1,4 @@
-FROM rockylinux:9.3
+FROM registry.access.redhat.com/ubi9:9.4-1123.1719560047
 
 COPY my.id_rsa.pub .
 
@@ -11,4 +11,4 @@ RUN $HOME/bin/gitolite setup -pk my.id_rsa.pub
 
 EXPOSE 22
 
-CMD ["/usr/sbin/init"]
+CMD ["sleep", "120"]
