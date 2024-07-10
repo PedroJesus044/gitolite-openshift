@@ -1,4 +1,4 @@
-FROM ubi9
+FROM rockylinux:9.3
 
 COPY my.id_rsa.pub .
 
