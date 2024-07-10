@@ -9,4 +9,6 @@ RUN mkdir -p $HOME/bin
 RUN gitolite/install -to $HOME/bin
 RUN gitolite setup -pk my.id_rsa.pub
 
+EXPOSE 22
+
 CMD ["/bin/bash"]
