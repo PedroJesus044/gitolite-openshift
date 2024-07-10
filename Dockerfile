@@ -11,4 +11,4 @@ RUN $HOME/bin/gitolite setup -pk my.id_rsa.pub
 
 EXPOSE 22
 
-CMD ["/bin/bash"]
+CMD ["/usr/sbin/init"]
