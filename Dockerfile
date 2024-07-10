@@ -1,6 +1,6 @@
 FROM rockylinux:9.3
 
-COPY my.id_rsa.pub .
+#COPY my.id_rsa.pub .
 
 #USER root
 #RUN yum install git perl* -y
