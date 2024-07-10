@@ -10,5 +10,3 @@ FROM rockylinux:9.3
 #RUN $HOME/bin/gitolite setup -pk my.id_rsa.pub
 
 EXPOSE 8080
-
-CMD ["/bin/bash"]
