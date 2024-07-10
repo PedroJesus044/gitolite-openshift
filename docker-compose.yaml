@@ -1,0 +1,7 @@
+services:
+  gitolite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: #Mapear este puerto para ver la consola
+      - "22:3222"
