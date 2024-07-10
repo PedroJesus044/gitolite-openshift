@@ -5,8 +5,8 @@ COPY my.id_rsa.pub .
 USER root
 RUN yum install git perl* -y
 RUN git clone https://github.com/sitaramc/gitolite
-RUN gitolite/install -to /sbin
-RUN $HOME/bin/gitolite setup -pk my.id_rsa.pub
+RUN gitolite/install -to /bin
+RUN gitolite setup -pk my.id_rsa.pub
 
 EXPOSE 22
 
