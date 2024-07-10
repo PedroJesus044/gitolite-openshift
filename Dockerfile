@@ -9,6 +9,6 @@ COPY my.id_rsa.pub .
 #RUN gitolite/install -to $HOME/bin
 #RUN $HOME/bin/gitolite setup -pk my.id_rsa.pub
 
-EXPOSE 22
+EXPOSE 8080
 
 CMD ["/bin/bash"]
